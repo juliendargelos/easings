@@ -77,3 +77,14 @@ customElasticOut(0.3)
 | `exponential[.in\|.out]` | `{ order: 10 }`                 |
 | `back[.in\|.out]`        | `{ overshoot: 1.70158 }`        |
 | `elastic[.in\|.out]`     | `{ amplitude: 1, period: 0.3 }` |
+
+#### Types
+
+The library export basic types you might find useful if you want to expose easing options in your own library:
+
+```typescript
+import { EasingName, EasingFunction } from '@juliendargelos/easing'
+
+// EasingName represents all string names from the above list ('cubic', 'cubic.in', ...)
+// EasingFunction is an alias for (t: number) => number
+```
