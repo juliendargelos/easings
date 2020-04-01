@@ -1,0 +1,191 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8">
+    <title>easings</title>
+    <style>
+        body {
+          margin: 0;
+          display: flex;
+          font-family: monospace;
+        }
+
+        main {
+          width: 100%;
+          max-width: 1440px;
+          overflow: hidden;
+        }
+
+        section {
+          width: calc(100% + 1px);
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        article, div {
+          width: 20%;
+          min-width: 200px;
+          flex-grow: 1;
+          flex-shrink: 1;
+        }
+
+        article {
+          padding: 15px;
+          border-bottom: 1px solid #eee;
+          border-right: 1px solid #eee;
+          box-sizing: border-box;
+        }
+
+        h2 {
+          margin-bottom: 15px;
+          font-size: 14px;
+          text-align: center;
+        }
+
+        figure {
+          background-image: paint(easing);
+          width: 100%;
+          height: 0;
+          margin: 0;
+          padding-top: 100%;
+        }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <article>
+          <h2>linear</h2>
+          <figure style="--easing: linear"></figure>
+        </article>
+        <article>
+          <h2>quadratic</h2>
+          <figure style="--easing: quadratic"></figure>
+        </article>
+        <article>
+          <h2>quadratic.in</h2>
+          <figure style="--easing: quadratic.in"></figure>
+        </article>
+        <article>
+          <h2>quadratic.out</h2>
+          <figure style="--easing: quadratic.out"></figure>
+        </article>
+        <article>
+          <h2>cubic</h2>
+          <figure style="--easing: cubic"></figure>
+        </article>
+        <article>
+          <h2>cubic.in</h2>
+          <figure style="--easing: cubic.in"></figure>
+        </article>
+        <article>
+          <h2>cubic.out</h2>
+          <figure style="--easing: cubic.out"></figure>
+        </article>
+        <article>
+          <h2>quartic</h2>
+          <figure style="--easing: quartic"></figure>
+        </article>
+        <article>
+          <h2>quartic.in</h2>
+          <figure style="--easing: quartic.in"></figure>
+        </article>
+        <article>
+          <h2>quartic.out</h2>
+          <figure style="--easing: quartic.out"></figure>
+        </article>
+        <article>
+          <h2>quintic</h2>
+          <figure style="--easing: quintic"></figure>
+        </article>
+        <article>
+          <h2>quintic.in</h2>
+          <figure style="--easing: quintic.in"></figure>
+        </article>
+        <article>
+          <h2>quintic.out</h2>
+          <figure style="--easing: quintic.out"></figure>
+        </article>
+        <article>
+          <h2>circular</h2>
+          <figure style="--easing: circular"></figure>
+        </article>
+        <article>
+          <h2>circular.in</h2>
+          <figure style="--easing: circular.in"></figure>
+        </article>
+        <article>
+          <h2>circular.out</h2>
+          <figure style="--easing: circular.out"></figure>
+        </article>
+        <article>
+          <h2>sinusoidal</h2>
+          <figure style="--easing: sinusoidal"></figure>
+        </article>
+        <article>
+          <h2>sinusoidal.in</h2>
+          <figure style="--easing: sinusoidal.in"></figure>
+        </article>
+        <article>
+          <h2>sinusoidal.out</h2>
+          <figure style="--easing: sinusoidal.out"></figure>
+        </article>
+        <article>
+          <h2>bounce</h2>
+          <figure style="--easing: bounce"></figure>
+        </article>
+        <article>
+          <h2>bounce.in</h2>
+          <figure style="--easing: bounce.in"></figure>
+        </article>
+        <article>
+          <h2>bounce.out</h2>
+          <figure style="--easing: bounce.out"></figure>
+        </article>
+        <article>
+          <h2>exponential</h2>
+          <figure style="--easing: exponential"></figure>
+        </article>
+        <article>
+          <h2>exponential.in</h2>
+          <figure style="--easing: exponential.in"></figure>
+        </article>
+        <article>
+          <h2>exponential.out</h2>
+          <figure style="--easing: exponential.out"></figure>
+        </article>
+        <article>
+          <h2>back</h2>
+          <figure style="--easing: back"></figure>
+        </article>
+        <article>
+          <h2>back.in</h2>
+          <figure style="--easing: back.in"></figure>
+        </article>
+        <article>
+          <h2>back.out</h2>
+          <figure style="--easing: back.out"></figure>
+        </article>
+        <article>
+          <h2>elastic</h2>
+          <figure style="--easing: elastic"></figure>
+        </article>
+        <article>
+          <h2>elastic.in</h2>
+          <figure style="--easing: elastic.in"></figure>
+        </article>
+        <article>
+          <h2>elastic.out</h2>
+          <figure style="--easing: elastic.out"></figure>
+        </article>
+      </section>
+    </main>
+  
+
+<script type="text/javascript" src="index.js"></script>
+</body></html>
