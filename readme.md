@@ -40,7 +40,7 @@ Easings['exponential.out'](0.3)
 
 #### Parameterized easings
 
-Parameterized easings have an extra `with()` method that generate a new easing function based on parameters. Other easings **does not** have the `with()` method (would be pointless), see [*Available easings*](#available-easings).
+Parameterized easings have an extra `with()` method that generate a new easing function based on parameters. Other easings **do not** have the `with()` method (would be pointless), see [*Available easings*](#available-easings).
 
 ```typescript
 import { elastic } from '@juliendargelos/easings'
