@@ -1,6 +1,6 @@
 {
   "name": "@juliendargelos/easings",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Easing functions in TypeScript",
   "author": "Julien Dargelos <contact@juliendargelos.com>",
   "license": "MIT",
