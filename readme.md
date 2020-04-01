@@ -62,16 +62,16 @@ customElasticOut(0.3)
 
 #### Available easings
 
-| Name                    | Parameters (default values)       |
-|-------------------------|-----------------------------------|
-| `linear`                |                                   |
-| `quadratic[.in|.out]`   |                                   |
-| `cubic[.in|.out]`       |                                   |
-| `quartic[.in|.out]`     |                                   |
-| `quintic[.in|.out]`     |                                   |
-| `circular[.in|.out]`    |                                   |
-| `sinusoidal[.in|.out]`  |                                   |
-| `bounce[.in|.out]`      |                                   |
-| `exponential[.in|.out]` | `{ order: 10 }`                   |
-| `back[.in|.out]`        | `{ overshoot: 1.70158 }`          |
-| `elastic[.in|.out]`     | `{ amplitude: 0.8, period: 0.4 }` |
+| Name                     | Parameters (default values)       |
+|--------------------------|-----------------------------------|
+| `linear`                 |                                   |
+| `quadratic[.in\|.out]`   |                                   |
+| `cubic[.in\|.out]`       |                                   |
+| `quartic[.in\|.out]`     |                                   |
+| `quintic[.in\|.out]`     |                                   |
+| `circular[.in\|.out]`    |                                   |
+| `sinusoidal[.in\|.out]`  |                                   |
+| `bounce[.in\|.out]`      |                                   |
+| `exponential[.in\|.out]` | `{ order: 10 }`                   |
+| `back[.in\|.out]`        | `{ overshoot: 1.70158 }`          |
+| `elastic[.in\|.out]`     | `{ amplitude: 0.8, period: 0.4 }` |
