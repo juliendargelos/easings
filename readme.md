@@ -4,6 +4,8 @@
 [![build](https://github.com/juliendargelos/easings/workflows/build/badge.svg?branch=master)](https://github.com/juliendargelos/easings/actions?workflow=build)
 [![version](https://img.shields.io/github/package-json/v/juliendargelos/easings)](https://github.com/juliendargelos/easings)
 
+<img align="right" src="https://github.com/juliendargelos/easings/raw/master/figure.gif" height="200">
+
 Easing functions in TypeScript.
 
 [Demo](https://juliendargelos.com/easings) (relies on css paint api so you should use Google Chrome for now).
