@@ -80,7 +80,7 @@ customElasticOut(0.3)
 
 #### Types
 
-The library export basic types you might find useful if you want to expose easing options in your own library:
+The library exports basic types you might find useful if you want to expose easing options in your own library:
 
 ```typescript
 import { EasingName, EasingFunction } from '@juliendargelos/easing'
