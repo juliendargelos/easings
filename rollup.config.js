@@ -1,10 +1,10 @@
 import autoExternal from 'rollup-plugin-auto-external'
 import nodeResolve from '@rollup/plugin-node-resolve'
+import bundleHtml from 'rollup-plugin-bundle-html'
 import commonjs from '@rollup/plugin-commonjs'
 import cleaner from 'rollup-plugin-cleaner'
 import alias from '@rollup/plugin-alias'
 import serve from 'rollup-plugin-serve'
-import html from '@rollup/plugin-html'
 import ts from 'rollup-plugin-ts'
 import { terser } from 'rollup-plugin-terser'
 import { eslint } from 'rollup-plugin-eslint'
@@ -41,8 +41,8 @@ export default [
     ],
     plugins: [
       ...config.plugins,
-      ts(),
       eslint(),
+      ts(),
       cleaner({ targets: [pkg.main.replace(/\/[^\/]+$/, '')] }),
     ]
   },
@@ -75,22 +75,26 @@ export default [
     input: 'demo/index.ts',
     output: {
       ...config.output,
-      file: 'demo-dist/index.js',
-      format: 'iife'
+      dir: 'demo-dist',
+      chunkFileNames: '[name].js',
+      format: 'es'
     },
     plugins: [
       ...config.plugins,
       ts({
         tsconfig: tsconfig => ({
           ...tsconfig,
-          target: 'es5',
           declaration: false
         })
       }),
       cleaner({ targets: ['demo-dist'] }),
       nodeResolve({ extensions: ['.ts', '.js'] }),
       commonjs(),
-      html({ title: `${pkg.name} demo` }),
+      bundleHtml({
+        template: 'demo/index.html',
+        dest: 'demo-dist',
+        ignore: /\/(?:worklet|css-paint-polyfill)\.js$/
+      }),
       production && terser(),
       development && serve('demo-dist')
     ]

@@ -6,6 +6,7 @@
   "plugins": ["@typescript-eslint"],
   "rules": {
     "max-len": ["warn"],
+    "no-var": ["off"],
     "@typescript-eslint/indent": ["error", 2],
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-triple-slash-reference": "off",
