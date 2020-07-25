@@ -44,6 +44,7 @@ export default [
       eslint(),
       ts(),
       cleaner({ targets: [pkg.main.replace(/\/[^\/]+$/, '')] }),
+      terser()
     ]
   },
 

@@ -13,7 +13,7 @@ Easing functions in TypeScript.
 ## Install
 
 ```bash
-yarn add @juliendargelos/easings
+npm install @juliendargelos/easings --save
 ```
 
 ## Usage
